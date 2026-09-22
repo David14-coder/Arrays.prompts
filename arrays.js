@@ -61,16 +61,31 @@
 //     }
 
 
-let userInput = prompt("enter temperatures separated by comas (72, 85, 91, 68):");
+// let userInput = prompt("enter temperatures separated by comas (72, 85, 91, 68):");
 
-let temperatures = userInput ? userInput.split(",").map(Number) : [72, 85, 91, 68];
+// let temperatures = userInput ? userInput.split(",").map(Number) : [72, 85, 91, 68];
 
- let max = temperatures[0];
+//  let max = temperatures[0];
  
- for(let i = 1; i < temperatures.length; i++) {
-    if(temperatures[i] > max){
-        max = temperatures[i];
-    }
- }
+//  for(let i = 1; i < temperatures.length; i++) {
+//     if(temperatures[i] > max){
+//         max = temperatures[i];
+//     }
+//  }
 
- console.log("highest temp:", max);
+//  console.log("highest temp:", max);
+
+
+
+let userInput = prompt("enter number separated by commas (10, 20, 30, 40, 50):");
+
+let original = userInput ? userInput.split(",").map(Number) : [10, 20, 30, 40, 50];
+
+let reversed = [];
+
+for(let i = 0; i < original.length; i++) {
+    reversed[i] = original[original.length - 1 -1];
+}
+
+console.log("Original:", original);
+console.log("Reversed:", reversed);
