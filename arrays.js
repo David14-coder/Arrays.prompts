@@ -40,22 +40,37 @@
 
 
 
-let inventory = ["sheild", "ball", "sword", "potion", "pot", "rice", "helmet", "cement", "hoe", "pos", "phone", "charge", "basket", "bicycle", "pepsi", "whatsapp",
-    "lagos", "soap", "dangote", "shares", "oil", "hub", "song", "gain", "btc", "time", "crypto", "food", "kitchen", "race", "run", "mtn", "who"]
+// let inventory = ["sheild", "ball", "sword", "potion", "pot", "rice", "helmet", "cement", "hoe", "pos", "phone", "charge", "basket", "bicycle", "pepsi", "whatsapp",
+//     "lagos", "soap", "dangote", "shares", "oil", "hub", "song", "gain", "btc", "time", "crypto", "food", "kitchen", "race", "run", "mtn", "who"]
 
-    let target = prompt("what item are you looking for");
+//     let target = prompt("what item are you looking for");
 
-    let foundIndex = -1;
+//     let foundIndex = -1;
 
-    for(let i = 0; i < inventory.length; i++){
-        if(inventory[i] === target) {
-            foundIndex = i;
-            break;
-        }
+//     for(let i = 0; i < inventory.length; i++){
+//         if(inventory[i] === target) {
+//             foundIndex = i;
+//             break;
+//         }
+//     }
+
+//     if(foundIndex !== -1) {
+//         console.log("found " + "at index " + foundIndex);
+//     }else{
+//         console.log("item not found");
+//     }
+
+
+let userInput = prompt("enter temperatures separated by comas (72, 85, 91, 68):");
+
+let temperatures = userInput ? userInput.split(",").map(Number) : [72, 85, 91, 68];
+
+ let max = temperatures[0];
+ 
+ for(let i = 1; i < temperatures.length; i++) {
+    if(temperatures[i] > max){
+        max = temperatures[i];
     }
+ }
 
-    if(foundIndex !== -1) {
-        console.log("found " + "at index " + foundIndex);
-    }else{
-        console.log("item not found");
-    }
+ console.log("highest temp:", max);
