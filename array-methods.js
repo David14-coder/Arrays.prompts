@@ -1,108 +1,123 @@
-let students = ["John", "Mary", "David"];
+// let students = ["John", "Mary", "David"];
 
-students.push("Victor");
+// students.push("Victor");
 
-console.log(students);
-
-
-let cart = []
-
-cart.push("cap", "sandal", "watch")
-
-console.log(cart)
-
-let students = ["John", "Mary", "David"];
-
-students.pop();
-
-console.log(students);
-
-let students = ["John", "Mary", "David"];
-
-students.shift();
-
-console.log(students);
-
-// let students = ["Mary", "David"];
-
-students.unshift("conqueror");
-
-console.log(students);
+// console.log(students);
 
 
-let cart = ["laptop", "mouse"];
-cart.push ("keyboard");
+// let cart = []
 
-console.log(cart);
+// cart.push("cap", "sandal", "watch")
 
-cart.unshift("monitor");
+// console.log(cart)
 
-console.log(cart);
+// let students = ["John", "Mary", "David"];
+
+// students.pop();
+
+// console.log(students);
+
+// let students = ["John", "Mary", "David"];
+
+// students.shift();
+
+// console.log(students);
+
+// // let students = ["Mary", "David"];
+
+// students.unshift("conqueror");
+
+// console.log(students);
 
 
+// let cart = ["laptop", "mouse"];
+// cart.push ("keyboard");
+//  console.log(cart);
 
+//  cart.unshift("monitor");
+//  console.log(cart);
 
-let queue = ["customer A", "customer B", "customer C"];
+//  cart.pop("keyboard");
+//  console.log(cart);
 
-queue.push("customer D");
-
-console.log(queue);
-
-queue.unshift("vip customer");
-
-console.log(queue);
+//  cart.shift("monitor");
+//  console.log(cart);
 
 
 
-let notifications = ["new message", "payment received", "new order"];
-
-notifications.push("friend request");
-
-console.log(notifications);
-
-notifications.unshift("urgent alert");
-
-console.log(notifications);
 
 
+// let queue = ["customer A", "customer B", "customer C"];
 
-let transactions = [
-    "deposit $50,000",
-    "withdrawal $10,000",
-    "Transfer $5,000"
-];
+// queue.push("customer D");
+// console.log(queue);
 
-transactions.push("$20,000");
-
-console.log(transactions);
-
-transactions.unshift("Account opened");
-
-console.log(transactions);
+// queue.unshift("vip customer");
+// console.log(queue);
 
 
-let students = ["John", "Mary", "David"];
 
-console.log(students.includes("Mary"));
 
-let userInput = prompt("enter vip user")
+// let notifications = ["new message", "payment received", "new order"];
 
-if (userInput){
-    const allowedUsers = userInput.split(",").map(item => item.trim())
+// notifications.push("friend request");
+
+// console.log(notifications);
+
+// notifications.unshift("urgent alert");
+
+// console.log(notifications);
+
+
+
+// let transactions = [
+//     "deposit $50,000",
+//     "withdrawal $10,000",
+//     "Transfer $5,000"
+// ];
+
+// transactions.push("$20,000");
+
+// console.log(transactions);
+
+// transactions.unshift("Account opened");
+
+// console.log(transactions);
+
+
+// let students = ["John", "Mary", "David"];
+
+// console.log(students.includes("Mary"));
+
+// let userInput = prompt("enter vip user")
+
+// if (userInput){
+//     const allowedUsers = userInput.split(",").map(item => item.trim())
    
 
-    let search = prompt("enter user name")
+//     let search = prompt("enter user name")
 
-    if (search && allowedUsers.includes(search.trim())){
-    console.log("login allowed")
-}else{
-    console.log("user not found ")
-}
-}
-
-
+//     if (search && allowedUsers.includes(search.trim())){
+//     console.log("login allowed")
+// }else{
+//     console.log("user not found ")
+// }
+// }
 
 
+let queue = ("custom A", "custom B", "custom C");
+
+queue.push("custom D");
+console.log(queue);
+
+queue.unshift("VIP customer");
+console.log(queue);
 
 
+let romovedLast = queue.pop();
 
+let servedCustomer = queue.shift();
+
+console.log("customer served:", servedCustomer);
+console.log("customer removed from the end:", removedLast);
+console.log("customer remaining:", queue);
