@@ -205,25 +205,36 @@
 // }
 
 
-let students = ["John", "Mary", "David", "Sarah"];
+// let students = ["John", "Mary", "David", "Sarah"];
 
 
-students.push("Victor");
+// students.push("Victor");
 
-let removedFirst = students.shift();
-console.log(students);
+// let removedFirst = students.shift();
+// console.log(students);
 
-students.unshift("messi");
-console.log(students);
+// students.unshift("messi");
+// console.log(students);
 
-let removedLast = students.pop();
-console.log(students);
+// let removedLast = students.pop();
+// console.log(students);
 
-let position = students.indexOf("Victor");
+// let position = students.indexOf("Victor");
 
-if(position !== -1) {
-    console.log("excellent");
-    console.log("students position:", position)
+// if(position !== -1) {
+//     console.log("excellent");
+//     console.log("students position:", position)
+// }else{
+//     console.log("Not a student");
+// }
+
+let products = ["Laptop", "Mouse","Keyboard", "Monitor", "Webcam"];
+
+let position = products.indexOf("Mouse");
+
+if(products !== -1) {
+    console.log("product position found");
+    console.log("products position:", position);
 }else{
-    console.log("Not a student");
+    console.log()
 }
